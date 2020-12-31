@@ -43,7 +43,7 @@
 <main> 
         <!--HERO-->
     <section class="hero">
-        <div class="container">
+        <div >
             <H1 class="hero-title">Эффективные решения для вашего бизнеса</H1>
             <button class="button-index" type="button" data-modal-open>Заказать услугу</button>
         </div>
@@ -359,17 +359,17 @@
         </div>
     </div>
     
-    <div class="email-subscription">
+<div class="email-subscription">
       
-        <b class="slogan-web">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-        <form class="form-subscription">
-            <div class="form-field-email">
-                <input type="email" class="form-input" name="mail" placeholder="E-mail">
-            </div>
-            <button class="modal-btn-send" type="submit"> Подписаться
-                <svg class="modal-icon-send">
-                    <use href="./images/icon-send-sprite></use>
-                </svg>
+    <b class="footer-connect">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+    <form class="form-subscription">
+        <div class="form-field-email">
+            <input type="email" class="form-input" name="mail" placeholder="E-mail">
+        </div>
+        <button class="modal-btn-send" type="submit"> Подписаться
+            <svg class="modal-icon-send">
+                <use href="./images/sprite-2.svg#icon-icon-send"></use>
+            </svg>
             </button>
         </form>
         
@@ -382,11 +382,58 @@
     <div class="modal">
         <button  class="window" type="button" data-modal-close>
             <svg class="close-icon">
-                <use href="./images/close-icon.svg"></use>
+                <use href="./images/sprite-2.svg#icon-close-1"></use>
             </svg>
         </button>
+    
+    <b class="modal-slogan">Оставьте свои данные, мы вам перезвоним</b>
+    <form class="modal-form">
+    
+    <div class="modal-form-sender">
+        <label for="name" class="modal-form-field">Имя</label>
+        <div class="modal-form-input-wrapper">
+            <input type="text" class="modal-form-input" name="user-name" id="name">
+            <svg class="modal-form-icon">
+                <use href="./images/images-hw-04/icons/sprite-2.svg#icon-person-black-18dp-1"></use>
+            </svg>
+        </div>
     </div>
 </div>
+
+<div class="modal-form-sender">
+    <label for="number" class="modal-form-field">Телефон</label>
+    <div class="modal-form-input-wrapper">
+      <input type="tel" class="modal-form-input" name="user-number" id="number">
+        <svg class="modal-form-icon">
+            <use href="./images/images-hw-04/icons/sprite-2.svg#icon-phone-black-18dp-1"></use>
+        </svg>
+    </div>
+</div>
+  
+<div class="modal-form-sender">
+    <label for="mail" class="modal-form-field">Почта</label>
+    <div class="modal-form-input-wrapper">
+      <input type="email" class="modal-form-input" name="user-mail" id="mail">
+        <svg class="modal-form-icon">
+            <use href="./images/images-hw-04/icons/sprite-2.svg#icon-Vector-1"></use>
+        </svg>
+    </div>
+</div>
+  
+<div class="modal-form-fillup">
+    <label for="textarea" class="modal-form-field">Комментарий</label>
+    <textarea class="modal-form-message" name="user-remark" id="textarea" placeholder="Введите текст"></textarea>
+</div>
+  
+<div class="user-agreement">
+    <input type="checkbox" class="user-policy visually-hidden" id="checkbox" value="accept-policy">
+    <label for="checkbox" class="policy-agreement">Соглашаюсь с рассылкой и принимаю<a href="#" class="subject-agreement">Условия договора</a></label>
+</div>
+ 
+    <button type="submit" class="modal-form-btn">Отправить</button>
+
+</form>
+
 
 <script src="./js/modal.js"></script>
 </body>
