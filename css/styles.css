@@ -469,10 +469,6 @@ body {
 .footer{
     background: #2F303A;
 }
-list-footer{
-    margin: 72px 0 100px 0;
-    
-}
 .footer-connect{
     color: #fff;
     display: flex;
@@ -799,6 +795,7 @@ list-footer{
 .form-subscription{
     display: flex;
     justify-content: flex-end;
+    margin-top: 20px;
 }
 .form-field-email {
     position: relative;
@@ -807,7 +804,6 @@ list-footer{
     box-sizing: border-box;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: #fff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .form-input{
@@ -867,6 +863,7 @@ list-footer{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 }
 .modal-slogan {
     display: block;
@@ -960,6 +957,55 @@ list-footer{
     color: var(--accent-color);
     margin-left: 6px;
 }
+.user-policy:checked + .policy-agreement::before {
+    background-image: url(./images/check-mark.svg);
+    border: transparent;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.policy-agreement::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    margin-right: 7px;
+    border-radius: 2px;
+}
+.policy-agreement {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714px;
+    letter-spacing: 0.03em;
+}
+.modal-form-btn {
+    display: block;
+    width: 200px;
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -984,6 +1030,11 @@ list-footer{
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.window:focus,
+.window:hover {
+    border-color: var(--accent-color);
 }
 .close-icon{
     position: absolute;
