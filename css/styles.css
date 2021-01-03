@@ -731,7 +731,7 @@ body {
 .icon-logo-3{
     width: 41px;
     height: 43px;
-    fill: #afb1b8;
+    fill: currentColor;
 }
 .icon-logo-4{
     width: 80px;
@@ -829,7 +829,6 @@ body {
     color: rgba(255, 255, 255, 0.6);
     background-color: #2f303a;
 }
-.
 .modal-btn-send{
     display: inline-flex;
     align-items: center;
