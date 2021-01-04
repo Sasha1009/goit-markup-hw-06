@@ -31,7 +31,7 @@ p {
     display:flex;
     align-items:center;
     justify-content: center;
-    padding: 25px;
+    padding: 25px 0;
 }
 .logo-list{
     display: flex;
@@ -686,6 +686,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto 0 auto;
+    padding: 0 15px;
 }
 .container-footer{
     max-width: 1600px;
